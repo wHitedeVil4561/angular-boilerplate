@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import * as CryptoJS from 'crypto-js';
-import { environment } from 'src/environments/environment';
+import { environment } from '../../environments/environment';
 /* tslint:disable */
 
 /*
@@ -58,6 +58,7 @@ export class CryptoService {
    */
   decryptObj(cipherMessage: any): any {
     const bytes = CryptoJS.AES.decrypt(cipherMessage, this.secretKey);
+    console.log(bytes)
     return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
   }
 }

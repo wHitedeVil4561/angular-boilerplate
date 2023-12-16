@@ -44,7 +44,32 @@ $angular-boilerplate-theme: mat.define-light-theme(
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@layer base {
+  .linear-gradient-1 {
+    background: linear-gradient(to top, #906cf5, #e159a2);
+  }
+  .linear-gradient-2 {
+    background: linear-gradient(109.08deg, #4568dc 0%, #b06ab3 98.01%);
+  }
+  .linear-gradient-3 {
+    background: linear-gradient(109.08deg, #23e1b4 0%, #088e6e 98.01%);
+  }
+  .linear-gradient-4 {
+    background: linear-gradient(109.08deg, #36d1dc 0%, #5b86e5 98.01%);
+  }
+  .linear-gradient-5 {
+    background: linear-gradient(109.08deg, #a4d0d8 0%, #4ca1af 98.01%);
+  }
+  .linear-gradient-6 {
+    background: linear-gradient(102deg, #2c178c 56.76%, #875887 97.37%);
+  }
+  .linear-gradient-7 {
+    background: linear-gradient(152deg, #2c178c 53.83%, #f04393 118.91%);
+  }
+  .linear-gradient-8 {
+    background: linear-gradient(92deg, #2c178c 9.05%, #f04393 104.31%);
+  }
+}
 html,
 body {
   height: 100%;

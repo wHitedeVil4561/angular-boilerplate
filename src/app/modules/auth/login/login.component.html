@@ -1,0 +1,36 @@
+<div
+  class="outlet shadow-lg p-5 max-w-[440px] mx-auto w-full flex flex-col gap-3 rounded-lg bg-white relative z-10"
+>
+  <div class="text-2xl font-semibold font-source mx-auto">Welcome back!</div>
+  <form class="flex flex-col gap-5">
+    <div class="form-item flex flex-col gap-1">
+      <label>Email/Phone</label>
+      <input
+        class="form-input border h-12 rounded w-full px-5 form-control"
+        placeholder="Enter email/phone"
+      />
+    </div>
+    <div class="form-item flex flex-col gap-1">
+      <label>Password</label>
+      <input
+        class="form-input border h-12 rounded w-full px-5 form-control"
+        placeholder="Enter password"
+      />
+      <div class="text-blue flex justify-end">Forgot Password?</div>
+    </div>
+    <div class="form-item flex flex-col items-center gap-2 justify-center">
+      <button
+        type="button"
+        class="w-3/5 h-14 bg-blue py-3 rounded-full text-white font-semibold text-xl font-source"
+        (click)="onLogin()"
+        [@buttonAnimation]="buttonState()"
+      >
+        <span>Login</span>
+      </button>
+      <h4>Or</h4>
+      <button type="button" class="cursor-pointer" [routerLink]="['/sign-up']">
+        Create an account
+      </button>
+    </div>
+  </form>
+</div>

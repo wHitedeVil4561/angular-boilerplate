@@ -14,6 +14,7 @@ export class LocalStorageService {
    */
   setItem(key: string, value: any) {
     const encStoreInfo = this.crypto.encryptObj(value);
+    console.log(encStoreInfo)
     localStorage.setItem(key, encStoreInfo);
   }
 
@@ -29,6 +30,7 @@ export class LocalStorageService {
       if (encStoreInfo) {
         localStorageInfo = this.crypto.decryptObj(localStorage.getItem(key));
       }
+      console.log(localStorageInfo)
       return localStorageInfo;
     } catch (err) {
       localStorage.clear();
